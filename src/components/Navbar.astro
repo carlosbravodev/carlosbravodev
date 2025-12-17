@@ -6,20 +6,20 @@ import linkedinIcon from "../assets/linkedin.svg";
 
 <header
   id="landing-header"
-  class="py-4 px-6 md:px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white font-brico"
+  class="py-4 px-6 md:px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white font-brico transition-colors duration-300 group"
 >
   <!-- Logo -->
   <div class="flex grow basis-0">
     <a
       href="#"
-      class="text-2xl font-black bg-white text-black px-4 py-2 rounded-lg border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200"
+      class="text-2xl font-black bg-white text-black px-4 py-2 rounded-lg border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200 group-[.is-scrolled]:bg-black group-[.is-scrolled]:text-white group-[.is-scrolled]:border-white group-[.is-scrolled]:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] group-[.is-scrolled]:hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]"
       >CB</a
     >
   </div>
 
   <!-- Desktop Navigation -->
   <nav class="hidden xl:block">
-    <ul class="flex text-xl gap-2">
+    <ul id="desktop-nav" class="flex text-xl gap-2">
       <li>
         <a
           href="#model-s"
@@ -46,17 +46,16 @@ import linkedinIcon from "../assets/linkedin.svg";
 
   <!-- Desktop Social Links + Mobile Menu Button -->
   <nav class="flex grow justify-end basis-0">
-    <ul class="flex items-center gap-2">
+    <ul class="flex items-center gap-4">
       <li class="hidden xl:block">
         <a
           href="#"
-          class="relative z-10 flex items-center gap-2 font-bold px-4 py-3 rounded-lg text-white transition-colors duration-200"
+          class="flex items-center gap-2 font-bold px-4 py-2 rounded-lg bg-white text-black border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200 group-[.is-scrolled]:bg-black group-[.is-scrolled]:text-white group-[.is-scrolled]:border-white group-[.is-scrolled]:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] group-[.is-scrolled]:hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]"
         >
           <Image
             src={githubIcon}
             alt="github icon"
-            class="w-5 h-5"
-            style="filter: brightness(0) invert(1);"
+            class="w-5 h-5 invert group-[.is-scrolled]:invert-0 transition-all duration-200"
           />
           <span>GitHub</span>
         </a>
@@ -64,13 +63,12 @@ import linkedinIcon from "../assets/linkedin.svg";
       <li class="hidden xl:block">
         <a
           href="#"
-          class="relative z-10 flex items-center gap-2 font-bold px-4 py-3 rounded-lg text-white transition-colors duration-200"
+          class="flex items-center gap-2 font-bold px-4 py-2 rounded-lg bg-white text-black border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200 group-[.is-scrolled]:bg-black group-[.is-scrolled]:text-white group-[.is-scrolled]:border-white group-[.is-scrolled]:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] group-[.is-scrolled]:hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]"
         >
           <Image
             src={linkedinIcon}
             alt="linkedin icon"
-            class="w-5 h-5"
-            style="filter: brightness(0) invert(1);"
+            class="w-5 h-5 invert group-[.is-scrolled]:invert-0 transition-all duration-200"
           />
           <span>LinkedIn</span>
         </a>
@@ -78,7 +76,7 @@ import linkedinIcon from "../assets/linkedin.svg";
       <li class="xl:hidden">
         <button
           id="menu-btn"
-          class="font-black px-5 py-2 rounded-lg border-4 border-black bg-white text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200"
+          class="font-black px-5 py-2 rounded-lg border-4 border-black bg-white text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200 group-[.is-scrolled]:bg-black group-[.is-scrolled]:text-white group-[.is-scrolled]:border-white group-[.is-scrolled]:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] group-[.is-scrolled]:hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]"
           >MENÚ</button
         >
       </li>
@@ -146,18 +144,14 @@ import linkedinIcon from "../assets/linkedin.svg";
           href="#"
           class="flex items-center justify-center gap-2 text-lg font-bold px-4 py-4 rounded-lg border-4 border-white bg-black text-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200"
         >
-          <Image src={githubIcon} alt="github icon" class="w-6 h-6 invert" />
+          <Image src={githubIcon} alt="github icon" class="w-6 h-6" />
           <span>GitHub</span>
         </a>
         <a
           href="#"
           class="flex items-center justify-center gap-2 text-lg font-bold px-4 py-4 rounded-lg border-4 border-white bg-black text-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200"
         >
-          <Image
-            src={linkedinIcon}
-            alt="linkedin icon"
-            class="w-6 h-6 invert"
-          />
+          <Image src={linkedinIcon} alt="linkedin icon" class="w-6 h-6" />
           <span>LinkedIn</span>
         </a>
       </div>
@@ -172,6 +166,16 @@ import linkedinIcon from "../assets/linkedin.svg";
   >
   </div>
 </header>
+<script>
+  const header = document.querySelector("#landing-header");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header?.classList.add("is-scrolled", "bg-black");
+    } else {
+      header?.classList.remove("is-scrolled", "bg-black");
+    }
+  });
+</script>
 
 <script>
   const menuBtn = document.getElementById("menu-btn") as HTMLButtonElement;
@@ -224,7 +228,7 @@ import linkedinIcon from "../assets/linkedin.svg";
 </script>
 
 <script>
-  const listItem = document.querySelectorAll("#landing-header li");
+  const listItem = document.querySelectorAll("#desktop-nav li");
   const menuBackDrop = document.querySelector("#menu-backdrop") as HTMLElement;
 
   // Only enable backdrop on desktop
@@ -232,7 +236,6 @@ import linkedinIcon from "../assets/linkedin.svg";
 
   listItem.forEach((item) => {
     const link = item.querySelector("a") as HTMLAnchorElement;
-    const icon = item.querySelector("img") as HTMLImageElement;
 
     item.addEventListener("mouseenter", () => {
       if (!isDesktop() || !menuBackDrop) return;
@@ -248,14 +251,30 @@ import linkedinIcon from "../assets/linkedin.svg";
       menuBackDrop.style.opacity = "1";
       menuBackDrop.style.visibility = "visible";
 
-      // Change text color to black when backdrop is visible
-      if (link) {
-        link.style.color = "#000000";
-      }
+      // Check if header is scrolled (dark mode)
+      const header = document.querySelector("#landing-header");
+      const isScrolled = header?.classList.contains("bg-black");
 
-      // Change icon color to black when backdrop is visible
-      if (icon) {
-        icon.style.filter = "brightness(0)";
+      if (isScrolled) {
+        // Invert backdrop styles for dark mode - Border only
+        menuBackDrop.style.backgroundColor = "rgba(0,0,0,0)"; // Transparent bg
+        menuBackDrop.style.borderColor = "#ffffff";
+        menuBackDrop.style.boxShadow = "4px 4px 0px 0px rgba(255,255,255,1)";
+
+        // Keep text white when backdrop is outline only
+        if (link) {
+          link.style.color = "#ffffff";
+        }
+      } else {
+        // Default styles - Solid white box
+        menuBackDrop.style.backgroundColor = "#ffffff"; // White bg
+        menuBackDrop.style.borderColor = "#000000";
+        menuBackDrop.style.boxShadow = "4px 4px 0px 0px rgba(0,0,0,1)";
+
+        // Change text color to black when backdrop is filled white
+        if (link) {
+          link.style.color = "#000000";
+        }
       }
     });
 
@@ -275,11 +294,6 @@ import linkedinIcon from "../assets/linkedin.svg";
       // Restore text color to white
       if (link) {
         link.style.color = "";
-      }
-
-      // Restore icon color to white
-      if (icon) {
-        icon.style.filter = "brightness(0) invert(1)";
       }
     });
   });

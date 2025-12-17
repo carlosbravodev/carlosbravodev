@@ -1,0 +1,189 @@
+---
+
+---
+
+<section
+  id="about"
+  class="min-h-screen py-20 px-6 font-brico bg-yellow-400 border-t-4 border-black"
+>
+  <div class="container mx-auto">
+    <!-- Section Title -->
+    <div class="flex justify-center mb-16">
+      <div
+        class="inline-block bg-white border-4 border-black rounded-2xl px-10 py-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform -rotate-2 hover:rotate-0 transition-transform duration-300"
+      >
+        <h2 class="text-4xl md:text-6xl font-black text-black">About Me</h2>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+      <!-- Bio Section -->
+      <div class="flex flex-col gap-8">
+        <div
+          class="bg-white border-4 border-black rounded-2xl p-6 md:p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-shadow duration-300"
+        >
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-4 h-4 rounded-full bg-red-500 border-2 border-black">
+            </div>
+            <div
+              class="w-4 h-4 rounded-full bg-yellow-400 border-2 border-black"
+            >
+            </div>
+            <div
+              class="w-4 h-4 rounded-full bg-green-500 border-2 border-black"
+            >
+            </div>
+            <div class="h-4 flex-grow border-b-4 border-black/10"></div>
+          </div>
+          <h3 class="text-3xl font-black mb-4">Who am I?</h3>
+          <p class="text-lg md:text-xl font-medium leading-relaxed">
+            I'm a passionate developer focused on creating unique digital
+            experiences. I love combining clean code with bold designs. Always
+            learning, always building, and looking for the next challenge to
+            solve with creative solutions.
+          </p>
+        </div>
+
+        <!-- Experience/Education -->
+        <div
+          class="bg-purple-400 border-4 border-black rounded-2xl p-6 md:p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-shadow duration-300"
+        >
+          <h3
+            class="text-3xl font-black mb-6 bg-white border-4 border-black inline-block px-4 py-2 rounded-lg transform rotate-1"
+          >
+            Studies
+          </h3>
+          <div class="space-y-6">
+            <div class="bg-white border-4 border-black rounded-xl p-4">
+              <span
+                class="inline-block bg-black text-white text-sm font-bold px-2 py-1 rounded mb-2"
+                >2023 - Present</span
+              >
+              <h4 class="text-xl font-black">Computer Engineering</h4>
+              <p class="font-bold text-gray-600">University of Technology</p>
+            </div>
+            <div class="bg-white border-4 border-black rounded-xl p-4">
+              <span
+                class="inline-block bg-black text-white text-sm font-bold px-2 py-1 rounded mb-2"
+                >2022</span
+              >
+              <h4 class="text-xl font-black">Full Stack Bootcamp</h4>
+              <p class="font-bold text-gray-600">Tech Academy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills / Stack -->
+      <div class="h-auto">
+        <div
+          class="h-auto bg-red-500 border-4 border-black rounded-2xl p-6 md:p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-shadow duration-300"
+        >
+          <h3 class="text-3xl font-black mb-8 text-center">
+            <span
+              class="bg-orange-400 px-4 py-2 border-4 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+            >
+              Tech Stack
+            </span>
+          </h3>
+
+          <div class="flex flex-wrap gap-3 justify-center content-start">
+            {
+              [
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "Astro",
+                "Tailwind",
+                "Node.js",
+                "Git",
+                "Figma",
+                "HTML5",
+                "CSS3",
+                "Next.js",
+                "SQL",
+              ].map((skill) => (
+                <div class="bg-gray-100 hover:bg-black hover:text-white border-4 border-black rounded-xl px-4 py-3 font-bold text-lg cursor-default transition-colors duration-200 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                  {skill}
+                </div>
+              ))
+            }
+          </div>
+
+          <!-- Decorative element -->
+          <div class="mt-8 flex justify-center">
+            <div class="w-full h-8 bg-black pattern-dots rounded-lg opacity-20">
+            </div>
+          </div>
+        </div>
+
+        <!-- Current Focus / Learning -->
+        <div
+          class="mt-8 bg-white border-4 border-black rounded-2xl p-6 md:p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-shadow duration-300"
+        >
+          <div class="flex justify-between items-start mb-4">
+            <span
+              class="bg-lime-300 text-black px-3 py-1 font-bold rounded-lg text-sm uppercase tracking-wider animate-pulse"
+            >
+              Loading...
+            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+
+          <h3 class="text-3xl font-black mb-2">Mastering Three.js</h3>
+          <p class="font-bold mb-6">Building 3D Web Experiences</p>
+
+          <!-- Progress Bar -->
+          <div class="relative pt-2">
+            <div
+              class="overflow-hidden h-6 mb-4 text-xs flex rounded-full border-4 border-black bg-white"
+            >
+              <div
+                style="width: 75%"
+                class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-black striped-bar"
+              >
+              </div>
+            </div>
+            <div class="flex justify-between font-black text-sm">
+              <span>Generic Dev</span>
+              <span>75% Loaded</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .pattern-dots {
+    background-image: radial-gradient(circle, #ffffff 2px, transparent 2.5px);
+    background-size: 12px 12px;
+  }
+
+  .striped-bar {
+    background-image: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.15) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.15) 75%,
+      transparent 75%,
+      transparent
+    );
+    background-size: 1rem 1rem;
+  }
+</style>

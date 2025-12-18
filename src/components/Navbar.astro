@@ -22,21 +22,21 @@ import linkedinIcon from "../assets/linkedin.svg";
     <ul id="desktop-nav" class="flex text-xl gap-2">
       <li>
         <a
-          href="#model-s"
+          href="#about"
           class="relative z-10 inline-flex items-center font-bold px-4 py-3 rounded-lg text-white transition-colors duration-200"
           >About</a
         >
       </li>
       <li>
         <a
-          href="#model-3"
+          href="#projects"
           class="relative z-10 inline-flex items-center font-bold px-4 py-3 rounded-lg text-white transition-colors duration-200"
           >Projects</a
         >
       </li>
       <li>
         <a
-          href="#model-x"
+          href="#contact"
           class="relative z-10 inline-flex items-center font-bold px-4 py-3 rounded-lg text-white transition-colors duration-200"
           >Contact</a
         >
@@ -56,6 +56,7 @@ import linkedinIcon from "../assets/linkedin.svg";
             src={githubIcon}
             alt="github icon"
             class="w-5 h-5 invert group-[.is-scrolled]:invert-0 transition-all duration-200"
+            aria-hidden="true"
           />
           <span>GitHub</span>
         </a>
@@ -69,6 +70,7 @@ import linkedinIcon from "../assets/linkedin.svg";
             src={linkedinIcon}
             alt="linkedin icon"
             class="w-5 h-5 invert group-[.is-scrolled]:invert-0 transition-all duration-200"
+            aria-hidden="true"
           />
           <span>LinkedIn</span>
         </a>
@@ -76,6 +78,7 @@ import linkedinIcon from "../assets/linkedin.svg";
       <li class="xl:hidden">
         <button
           id="menu-btn"
+          aria-label="Open mobile menu"
           class="font-black px-5 py-2 rounded-lg border-4 border-black bg-white text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200 group-[.is-scrolled]:bg-black group-[.is-scrolled]:text-white group-[.is-scrolled]:border-white group-[.is-scrolled]:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] group-[.is-scrolled]:hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]"
           >MENÚ</button
         >
@@ -93,6 +96,7 @@ import linkedinIcon from "../assets/linkedin.svg";
       <div class="flex justify-end mb-8">
         <button
           id="close-btn"
+          aria-label="Close mobile menu"
           class="p-3 rounded-lg border-4 border-white bg-black text-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200"
         >
           <svg
@@ -100,6 +104,7 @@ import linkedinIcon from "../assets/linkedin.svg";
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path
               stroke-linecap="round"
@@ -114,7 +119,7 @@ import linkedinIcon from "../assets/linkedin.svg";
       <ul class="flex flex-col gap-4 mb-8">
         <li>
           <a
-            href="#home"
+            href="#about"
             class="block w-full text-left text-2xl font-black px-6 py-4 rounded-lg border-4 border-white bg-black text-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200"
           >
             About
@@ -122,7 +127,7 @@ import linkedinIcon from "../assets/linkedin.svg";
         </li>
         <li>
           <a
-            href="#model-s"
+            href="#projects"
             class="block w-full text-left text-2xl font-black px-6 py-4 rounded-lg border-4 border-white bg-black text-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200"
           >
             Projects
@@ -130,7 +135,7 @@ import linkedinIcon from "../assets/linkedin.svg";
         </li>
         <li>
           <a
-            href="#model-3"
+            href="#contact"
             class="block w-full text-left text-2xl font-black px-6 py-4 rounded-lg border-4 border-white bg-black text-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200"
           >
             Contact
@@ -144,14 +149,24 @@ import linkedinIcon from "../assets/linkedin.svg";
           href="#"
           class="flex items-center justify-center gap-2 text-lg font-bold px-4 py-4 rounded-lg border-4 border-white bg-black text-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200"
         >
-          <Image src={githubIcon} alt="github icon" class="w-6 h-6" />
+          <Image
+            src={githubIcon}
+            alt="github icon"
+            class="w-6 h-6"
+            aria-hidden="true"
+          />
           <span>GitHub</span>
         </a>
         <a
           href="#"
           class="flex items-center justify-center gap-2 text-lg font-bold px-4 py-4 rounded-lg border-4 border-white bg-black text-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200"
         >
-          <Image src={linkedinIcon} alt="linkedin icon" class="w-6 h-6" />
+          <Image
+            src={linkedinIcon}
+            alt="linkedin icon"
+            class="w-6 h-6"
+            aria-hidden="true"
+          />
           <span>LinkedIn</span>
         </a>
       </div>
@@ -313,29 +328,4 @@ import linkedinIcon from "../assets/linkedin.svg";
       menuBackDrop.style.visibility = "hidden";
     }
   });
-</script>
-
-<script>
-  const headerEl = document.querySelector("#landing-header") as HTMLElement;
-
-  const observerOptions = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.9,
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      const { isIntersecting } = entry;
-      if (isIntersecting) {
-        const color = entry.target.getAttribute("data-header-color");
-        if (color) {
-          headerEl.style.color = color;
-        }
-      }
-    });
-  }, observerOptions);
-
-  const sectionElements = document.querySelectorAll(".landing-section");
-  sectionElements.forEach((section) => observer.observe(section));
 </script>

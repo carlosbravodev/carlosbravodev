@@ -1,5 +1,8 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
+import { Image } from "astro:assets";
+import vticketsImg from "../assets/vtickets-project.webp";
+import bequImg from "../assets/bequ-project.webp";
 ---
 
 <section
@@ -26,23 +29,26 @@ import ProjectCard from "./ProjectCard.astro";
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
       <!-- Project 1 -->
       <ProjectCard
-        title="Project Alpha"
-        description="A high-performance SaaS platform built for creators. Features real-time analytics, collaborative workspaces, and automated workflows."
+        title="v-tickets"
+        description="Complete ticketing platform for events with secure QR codes."
         colorClass="bg-purple-400"
         tags={[
-          { label: "React", colorClass: "bg-yellow-300" },
+          { label: "SvelteKit 5", colorClass: "bg-yellow-300" },
           { label: "TypeScript", colorClass: "bg-blue-300" },
           { label: "Tailwind", colorClass: "bg-red-300" },
+          { label: "Supabase", colorClass: "bg-green-300" },
+          { label: "Lemon Squeezy", colorClass: "bg-purple-300" },
         ]}
+        demoLink="https://vtickets-8p5e.vercel.app/"
+        repoLink="https://github.com/carlosbravodev/vtickets"
       >
-        <div class="h-full w-full bg-gray-900 group">
-          <!-- Overlay Content (Mockup Placeholder) -->
-          <div
-            class="absolute inset-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-500"
-          >
-            <span class="text-6xl">🚀</span>
-          </div>
-          <div class="absolute top-4 right-4 animate-bounce-slow">
+        <div class="w-full group relative">
+          <Image
+            src={vticketsImg}
+            alt="v-tickets project"
+            class="w-full h-auto group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute top-4 right-4 animate-bounce-slow z-10">
             <span
               class="bg-white border-2 border-black px-3 py-1 font-bold rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform rotate-3 text-sm"
               >New</span
@@ -53,72 +59,24 @@ import ProjectCard from "./ProjectCard.astro";
 
       <!-- Project 2 -->
       <ProjectCard
-        title="Neon Portfolio"
-        description="A minimalistic yet bold portfolio template designed for designers. Focus on large typography and micro-interactions."
+        title="BeQu | Web Agency"
+        description="Web design and development agency for professionals and businesses. SEO and automation."
         colorClass="bg-blue-400"
         tags={[
           { label: "Astro", colorClass: "bg-purple-300" },
-          { label: "CSS3", colorClass: "bg-green-300" },
+          { label: "Tailwind", colorClass: "bg-green-300" },
+          { label: "TypeScript", colorClass: "bg-blue-300" },
+          { label: "Resend", colorClass: "bg-white" },
         ]}
+        demoLink="https://www.bequweb.es/"
+        repoLink="https://github.com/carlosbravodev/bequweb"
       >
-        <div
-          class="h-full w-full bg-white flex items-center justify-center pattern-dots"
-        >
-          <div
-            class="w-32 h-32 rounded-full border-4 border-black bg-pink-400 flex items-center justify-center shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
-          >
-            <span class="text-5xl">🎨</span>
-          </div>
-        </div>
-      </ProjectCard>
-
-      <!-- Project 3 -->
-      <ProjectCard
-        title="Bot Commander"
-        description="Discord bot dashboard to manage communities. Includes moderation logs, music controls, and automated welcome messages."
-        colorClass="bg-yellow-400"
-        tags={[
-          { label: "Node.js", colorClass: "bg-orange-300" },
-          { label: "MongoDB", colorClass: "bg-indigo-300" },
-          { label: "Discord.js", colorClass: "bg-gray-200" },
-        ]}
-      >
-        <div
-          class="h-full w-full bg-black flex items-center justify-center relative overflow-hidden"
-        >
-          <div
-            class="text-white text-9xl font-black opacity-20 rotate-12 absolute scale-150"
-          >
-            API
-          </div>
-          <span class="text-6xl relative z-10">🤖</span>
-        </div>
-      </ProjectCard>
-
-      <!-- Project 4 -->
-      <ProjectCard
-        title="Urban Store"
-        description="Complete e-commerce solution with cart, checkout, and inventory management. Integrated with Stripe for payments."
-        colorClass="bg-red-400"
-        tags={[
-          { label: "Next.js", colorClass: "bg-teal-300" },
-          { label: "Stripe", colorClass: "bg-pink-300" },
-          { label: "Prisma", colorClass: "bg-cyan-300" },
-        ]}
-      >
-        <div
-          class="h-full w-full bg-lime-200 flex items-center justify-center relative overflow-hidden"
-        >
-          <!-- Abstract shapes -->
-          <div
-            class="absolute w-full h-full bg-[radial-gradient(circle,_black_1px,_transparent_1px)] bg-[length:20px_20px] opacity-20"
-          >
-          </div>
-          <div
-            class="w-40 h-10 bg-white border-4 border-black transform -rotate-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center font-black"
-          >
-            E-COMM
-          </div>
+        <div class="w-full group relative">
+          <Image
+            src={bequImg}
+            alt="BeQu Web Agency project"
+            class="w-full h-auto group-hover:scale-105 transition-transform duration-500"
+          />
         </div>
       </ProjectCard>
     </div>

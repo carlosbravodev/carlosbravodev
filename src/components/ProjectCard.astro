@@ -31,7 +31,7 @@ const {
 >
   <!-- Mockup / Image Area -->
   <div
-    class="h-64 sm:h-80 w-full border-b-4 border-black relative overflow-hidden group"
+    class="w-full shrink-0 border-b-4 border-black relative overflow-hidden group rounded-t-xl bg-white"
   >
     <slot />
   </div>
@@ -63,12 +63,14 @@ const {
     <div class="mt-auto flex gap-4">
       <a
         href={demoLink}
+        target="_blank"
         class="flex-1 bg-black text-white italic text-center py-3 rounded-xl border-4 border-black font-black hover:bg-gray-900 hover:shadow-[4px_4px_0px_0px_rgba(128,128,128,1)] transition-all"
       >
         Live Demo
       </a>
       <a
         href={repoLink}
+        target="_blank"
         class="flex-1 bg-white text-black text-center py-3 rounded-xl border-4 border-black font-black hover:bg-gray-100 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
       >
         GitHub
